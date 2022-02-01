@@ -1,0 +1,158 @@
+body {
+    padding: 40px 60px 60px;
+    font: 14px Helvetica, "Lucida Grande", Arial, sans-serif;
+    background-color: #342F45;
+}
+
+.routes {
+    color: #FFFADE;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 60px;
+    transition: color 0.5s;
+    text-decoration: none;
+}
+
+.routes:hover {
+    color: #E8D5B5;
+}
+
+.link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    height: 60px;
+    display: flex;
+    width: 100%;
+    border-radius: 30px;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: center;
+    background-color: #9382EB;
+}
+
+.menu-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    margin: 150px 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    animation-duration: 0.7s;
+    animation-name: fade-in-main-text;
+    animation-delay: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.project-container {
+    width: 25%;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.header {
+    font-size: 22px;
+    font-weight: bold;
+    color: #FFFADE;
+    transition: color 0.5s;
+
+}
+.header:hover {
+    color: #E8D5B5;
+}
+
+.common-text {
+    font-size: 24px;
+    padding-top: 20px;
+    padding-inline: 50px;
+    font-weight: bold;
+    text-align: justify;
+    color: #FFFADE;
+    animation-duration: 0.7s;
+    animation-name: fade-in-main-text;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.main-text-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    animation-duration: 0.7s;
+    animation-name: fade-in-main-text;
+    animation-delay: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    /*border: 1px solid red;*/
+}
+
+.avatar {
+    height: 300px;
+    display: flex;
+    width: 300px;
+    margin-right: 10%;
+    animation-duration: 0.7s;
+    animation-name: fade-in-main-text;
+    animation-delay: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    border-radius: 150px;
+    overflow: hidden;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-menu {
+    from {
+        width: 30px;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fade-in-main-text {
+    from {
+        opacity: 0;
+        margin-top: 60px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
